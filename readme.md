@@ -74,7 +74,7 @@
 
 >php artisan queue:work rabbitmq --queue=processing,queue_name<br>
 
-[http://RABBITMQ_HOST:15672]()<br>
+[http://RABBITMQ_HOST:15672](http://RABBITMQ_HOST:15672)<br>
 
 ### REFERECE
 [Queues](https://laravel.com/docs/5.4/queues)<br>

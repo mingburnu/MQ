@@ -1,4 +1,3 @@
-#message queue & rabbitMQ
 > mv /var/lib/dpkg/info /var/lib/dpkg/info.bak<br>
 > mkdir /var/lib/dpkg/info<br>
 > apt-get update<br>

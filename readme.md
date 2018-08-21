@@ -72,9 +72,9 @@
 
     Route::get('/queue',['as'=>'queue.job','uses'=>'QueueController@queue']);
 
->php artisan queue:work rabbitmq --queue=processing,queue_name<br>
-
+[http://APP_URL/queue](http://APP_URL/queue)<br>
 [http://RABBITMQ_HOST:15672](http://RABBITMQ_HOST:15672)<br>
+>php artisan queue:work rabbitmq --queue=processing,queue_name<br>
 
 ### REFERECE
 [Queues](https://laravel.com/docs/5.4/queues)<br>

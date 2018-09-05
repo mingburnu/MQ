@@ -63,7 +63,7 @@
         .................    
     ]
 
-[edit .env](https://github.com/mingburnu/MQ/blob/master/.env)
+[edit .env](https://github.com/mingburnu/MQ/blob/master/.env)<br>
 
     RABBITMQ_HOST=127.0.0.1
     RABBITMQ_PORT=5672

@@ -1,13 +1,13 @@
-> mv /var/lib/dpkg/info /var/lib/dpkg/info.bak<br>
-> mkdir /var/lib/dpkg/info<br>
-> apt-get update<br>
+>mv /var/lib/dpkg/info /var/lib/dpkg/info.bak<br>
+>mkdir /var/lib/dpkg/info<br>
+>apt-get update<br>
 >apt upgrade<br>
 >apt-get install erlang<br>
 >echo 'deb http://www.rabbitmq.com/debian/ testing main' | tee /etc/apt/sources.list.d/rabbitmq.list<br>
 >wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key add -<br>
 >apt-get update<br>
 >apt-get install rabbitmq-server<br>
-> vim /etc/rabbitmq/rabbitmq.config<br>
+>vim /etc/rabbitmq/rabbitmq.config<br>
 
     [
            {rabbit, [{loopback_users, []}]}
@@ -62,6 +62,15 @@
         
         .................    
     ]
+
+[edit .env](https://github.com/mingburnu/MQ/blob/master/.env)
+
+    RABBITMQ_HOST=127.0.0.1
+    RABBITMQ_PORT=5672
+    RABBITMQ_VHOST=/
+    RABBITMQ_LOGIN=guest
+    RABBITMQ_PASSWORD=guest
+    RABBITMQ_QUEUE=queue_name
 
 >php artisan make:job QueueJob<br>
 >php artisan make:controller QueueController<br>
